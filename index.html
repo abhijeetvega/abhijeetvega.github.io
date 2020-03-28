@@ -22,7 +22,10 @@ function checkTime(i) {
 }
 </script> 
 </head>
-<body>
+<body onload="startTime()">
+
+<div id="txt"></div>
+
 <div class="content">
   <div class="header">
     <div class="top_info">
@@ -31,24 +34,7 @@ function checkTime(i) {
           Do you want to <a href="http://all-free-download.com/free-website-templates/">Log in</a> or <a href="http://all-free-download.com/free-website-templates/">register</a>?</p>
       </div>
       <div class="top_info_left">
-        <p>Today is:
-<script>
-function startTime() {
-  var today = new Date();
-  var h = today.getHours();
-  var m = today.getMinutes();
-  var s = today.getSeconds();
-  m = checkTime(m);
-  s = checkTime(s);
-  document.getElementById('txt').innerHTML =
-  h + ":" + m + ":" + s;
-  var t = setTimeout(startTime, 500);
-}
-function checkTime(i) {
-  if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
-  return i;
-}
-</script> <br />
+        <p>Today is:29march 2020<br />
           Check todays <a href="http://all-free-download.com/free-website-templates/">hot topics</a> or <a href="http://all-free-download.com/free-website-templates/">new products</a></p>
       </div>
     </div>
